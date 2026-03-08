@@ -197,3 +197,29 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+.error-message {
+  padding: var(--space-md);
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--color-danger);
+  border-radius: var(--radius-md);
+  color: var(--color-danger);
+  text-align: center;
+  margin-top: var(--space-md);
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* ===== Code/Inline Code ===== */
+code, .credential-code {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background: var(--color-bg-input);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 0.875em;
+}
